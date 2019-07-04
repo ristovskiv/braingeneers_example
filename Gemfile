@@ -61,6 +61,7 @@ end
 
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
+gem "haml-rails", "~> 2.0"
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
