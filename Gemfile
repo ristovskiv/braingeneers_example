@@ -48,6 +48,9 @@ group :development, :test do
   gem 'pry-theme'
   gem 'pry-rake'
   gem 'pry-stack_explorer'
+
+  # Annotate models with schema and route information
+  gem 'annotate'
 end
 
 group :development do
