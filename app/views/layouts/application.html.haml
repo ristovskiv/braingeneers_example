@@ -5,6 +5,12 @@
     %title BraingeneersExample
     = csrf_meta_tags
     = csp_meta_tag
+
+    = javascript_include_tag 'https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'https://unpkg.com/whatwg-fetch@2.0.3/fetch.js', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'https://transloadit.edgly.net/releases/uppy/v1.2.0/uppy.min.js', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'https://transloadit.edgly.net/releases/uppy/v1.2.0/uppy.min.css', media: 'all', 'data-turbolinks-track': 'reload'
+
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body.container

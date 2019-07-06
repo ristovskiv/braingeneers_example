@@ -6,8 +6,17 @@
         - @album.errors.full_messages.each do |message|
           %li= message
 
-  .field
-    = f.label :title
-    = f.text_field :title
+  .form-group.row
+    = f.label :title, class: 'col-sm-1 col-form-label col-form-label-md text-center'
+    .col-md-5
+      = f.text_field :title, class: 'form-control form-control-md'
+
+  .row.photos
+    = f.fields_for :photos do |photo_f|
+      = render 'photo', f: photo_f
+
+  .form-group
+    = photos_field f
+
   .actions
-    = f.submit 'Save'
+    = f.submit 'Save', class: 'btn btn-primary'

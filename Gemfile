@@ -66,6 +66,8 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
 gem "haml-rails", "~> 2.0"
 
+gem 'exif', '~> 2.2'
+gem 'image_processing', '~> 1.9'
 gem 'shrine', '~> 2.18'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

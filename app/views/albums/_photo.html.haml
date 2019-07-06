@@ -1,0 +1,19 @@
+.col-md-6
+  .form-inputs
+    = f.hidden_field :_destroy
+    = link_to 'Delete', '#', class: 'remove_record'
+
+  #image.form-inputs
+    / - unless f.object.new_record?
+
+    /   - if f.object.image.present?
+    /     = image_tag f.object.image_url, class: 'img-thumbnail'
+
+    /   = f.hidden_field :image, value: f.object.cached_image_data
+    /   = image_tag f.object.image_url, class: 'img-thumbnail', id: "preview-cover-photo"
+    = f.hidden_field :image, value: (f.object.new_record? ? f.object.cached_image_data : f.object.image_data)
+    = image_tag f.object.image_url.to_s, class: 'img-thumbnail', id: "preview-cover-photo", width: '200'
+
+  .form-inputs
+    = f.label :model
+    = f.text_field :model
