@@ -66,7 +66,7 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
 gem "haml-rails", "~> 2.0"
 
-gem 'shrine', '~> 2.18'
+gem 'shrine', '~> 3.3'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
